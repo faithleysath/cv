@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴天一 - 全栈工程师 | Web3 开发者</title>
+    <!-- 加载 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 谷歌字体 Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #f8fafc; /* Tailwind gray-50 */
+        }
+        /* 打印样式 */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            /* 解决打印时深色背景和浅色文字的问题 */
+            header {
+                background: white !important;
+                color: black !important;
+            }
+            header h1, header p, header a {
+                color: black !important;
+            }
+            /* 移除打印时的 SVG 图标颜色（如果它们是白色的） */
+            header a svg {
+                stroke: black !important;
+            }
+            .print-bg-gray-100 {
+                background-color: #f3f4f6 !important; /* Tailwind gray-100 */
+            }
+            .print-text-black {
+                color: black !important;
+            }
+            .print-border-gray-300 {
+                border-color: #d1d5db !important; /* Tailwind gray-300 */
+            }
+            /* 确保 GitHub 统计图在打印时是可见的（如果它们是浅色主题） */
+            .github-stats-print {
+                filter: invert(1);
+            }
+        }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto my-8 md:my-12 px-4 md:px-0">
+
+    <div class="bg-white shadow-2xl shadow-gray-300/30 rounded-2xl overflow-hidden border border-gray-200/50">
+        <!-- 头部 -->
+        <header class="bg-gray-800 text-white p-8 md:p-10 print-text-black">
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold">吴天一</h1>
+                    <p class="text-xl mt-2 text-indigo-300 font-medium print-text-black">全栈工程师 & Web3 开发者</p>
+                    <p class="text-gray-300 mt-3 max-w-xl print-text-black">
+                        南京信息工程大学，具备 TS 全栈工程能力与 Web3 DApp 开发经验。
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0 flex-shrink-0 hidden md:block">
+                    <img src="https://cdn.img2ipfs.com/ipfs/QmPjKxueN31JWVXpazRGne79LQ1CaMpjGLueqLbh5ZuCAC?filename=mmexport1745651016813.jpeg" alt="吴天一" class="rounded-full border-4 border-gray-700 shadow-lg w-35 h-32 object-cover">
+                </div>
+            </div>
+            
+            <!-- 链接 (更改：只保留图标，无背景) -->
+            <div class="mt-8 flex flex-wrap gap-5">
+                <!-- 更改：移除背景, 添加 opacity 悬停效果 -->
+                <a href="https://github.com/faithleysath" target="_blank" title="GitHub" class="flex items-center text-gray-300 hover:text-white transition-opacity no-print">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <!-- 更改：移除背景, 添加 opacity 悬停效果 -->
+                <a href="https://faithleysath.github.io/" target="_blank" title="Blog" class="flex items-center text-gray-300 hover:text-white transition-opacity no-print">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+                <!-- 更改：移除背景, 添加 opacity 悬停效果 -->
+                <a href="https://space.bilibili.com/401526407" target="_blank" title="Bilibili" class="flex items-center text-gray-300 hover:text-white transition-opacity no-print">
+                    <img src="data:image/png;base64,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" width="22" height="22" style="filter: saturate(0) brightness(125%);"/>
+                </a>
+                <!-- 更改：移除背景, 添加 opacity 悬停效果 -->
+                <a href="https://www.xiaohongshu.com/user/profile/66e8cbe7000000001d020533" target="_blank" title="小红书" class="flex items-center text-gray-300 hover:text-white transition-opacity no-print">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </a>
+                <!-- 更改：移除背景, 添加 opacity 悬停效果 -->
+                <a href="mailto:faithleysath@gmail.com" title="Email" class="flex items-center text-gray-300 hover:text-white transition-opacity no-print">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+                <!-- 打印按钮 -->
+                <a href="#" onclick="window.print(); return false;" title="打印本页" class="flex items-center text-indigo-300 hover:text-white transition-opacity no-print ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <main class="p-8 md:p-10">
+
+            <!-- 核心竞争力 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">核心竞争力</h2>
+                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                    <li>
+                        <strong>全栈工程能力：</strong> 具备从 0 到 1 交付完整产品的经验。实习期间独立负责前后端解耦的核心业务平台开发，能无缝切换 React/Vue 与 Node.js/Python 技术栈。
+                    </li>
+                    <li>
+                        <strong>Web3 实战背景：</strong> 拥有真实 DApp 开发经验。作为黑客松项目技术负责人，主导实现了 PWA 应用、简易钱包管理及 NFT 铸造全流程。
+                    </li>
+                    <li>
+                        <strong>快速学习与精英潜力：</strong> 专业排名前 4% (4/103)，高数竞赛获奖。3 天黑客松极限开发中主导技术选型与攻坚，英语口语流利 (Preply 50+ 小时)。
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 专业技能 (改为两栏) -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">专业技能</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                    <!-- 核心技术 -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">核心技术</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-700 font-medium px-3 py-1 rounded-full text-sm">TypeScript</span>
+                            <span class="bg-indigo-100 text-indigo-700 font-medium px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-indigo-100 text-indigo-700 font-medium px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-700 font-medium px-3 py-1 rounded-full text-sm">数据结构与算法</span>
+                            <span class="bg-indigo-100 text-indigo-700 font-medium px-3 py-1 rounded-full text-sm">英语 (口语流利)</span>
+                        </div>
+                    </div>
+                    <!-- 熟练技术 -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">熟练技术</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">Next.js</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">Vue</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">Hono</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">Drizzle ORM</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">ElysiaJS</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">FastAPI</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">Jotai / Zustand</span>
+                            <span class="bg-blue-100 text-blue-700 font-medium px-3 py-1 rounded-full text-sm">MUI / Shadcn</span>
+                        </div>
+                    </div>
+                    <!-- Web3 实践 -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Web3 实践</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-700 font-medium px-3 py-1 rounded-full text-sm">Rust (学习中)</span>
+                            <span class="bg-green-100 text-green-700 font-medium px-3 py-1 rounded-full text-sm">Ethers.js</span>
+                            <span class="bg-green-100 text-green-700 font-medium px-3 py-1 rounded-full text-sm">PWA 应用开发</span>
+                            <span class="bg-green-100 text-green-700 font-medium px-3 py-1 rounded-full text-sm">NFT 铸造 (Mint)</span>
+                            <!-- 对不熟的用灰色 -->
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">ERC-721 / ERC-20 标准</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">EIP-1193 (钱包 Provider API)</span>
+                        </div>
+                    </div>
+                    <!-- 基础与其它 -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">基础、DevOps 与工具</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">Git</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">CI/CD</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">DevOps</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">Vercel</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">Cloudflare</span>
+                            <span class="bg-gray-100 text-gray-600 font-medium px-3 py-1 rounded-full text-sm">敏捷开发</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- GitHub 统计 -->
+            <section class="mb-8 no-print">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">GitHub 统计</h2>
+                <!-- 修复移动端溢出 -->
+                <div class="overflow-x-auto print-bg-gray-100">
+                    <div class="flex flex-col md:flex-row gap-4 p-4 md:p-0">
+                        <!-- 使用你提供的链接 -->
+                        <img src="https://grs.isok.dev/api?username=faithleysath&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide_border=true" 
+                             alt="GitHub Stats" 
+                             class="md:w-1/2 rounded-lg github-stats-print" />
+                        <img src="https://grs.isok.dev/api/top-langs/?username=faithleysath&layout=compact&langs_count=8&theme=dracula&hide_border=true" 
+                             alt="Top Languages" 
+                             class="md:w-1/2 rounded-lg github-stats-print" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- 实习与项目经历 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">实习与项目经历</h2>
+                
+                <!-- 实习经历 -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900">江苏友谱信息科技有限公司</h3>
+                    <div class="flex justify-between items-center text-sm text-gray-600 mt-1 mb-3">
+                        <span>全栈开发实习生</span>
+                        <span class="font-medium">2025.06 - 2025.09 | 常州</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        独立负责一个前后端解耦的“研究性学习平台”的核心功能开发。
+                    </p>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-700">
+                        <li>
+                            前端：攻克并实现了一套复杂的<strong>甘特图在线编辑组件</strong>，支持任务拖拽、排期、依赖关系的可视化管理。
+                        </li>
+                        <li>
+                            后端：使用 Egg.js 搭建 RESTful API，通过 Redis 缓存优化高频数据接口性能 (提升约 40%)，并利用 WebSocket 实现项目内实时通讯与协作通知。
+                        </li>
+                        <li>
+                            技术栈：React, ElementUI, Egg.js (Node.js), Redis, MySQL, WebSocket。
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web3 项目 -->
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-3">
+                        <span>Web3 黑客松项目：“植忆” (MemoBloom)</span>
+                        <a href="https://github.com/SR-Studio1-AdventureX25/MemoBloom" target="_blank" class="text-indigo-500 hover:text-indigo-700 no-print" title="GitHub 仓库">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </h3>
+                    <div class="flex justify-between items-center text-sm text-gray-600 mt-1 mb-3">
+                        <span>技术负责人 / 核心开发</span>
+                        <span class="font-medium">2025.07 (AdventureX 2025)</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        一款 PWA 虚拟养成游戏，允许用户将养成的虚拟植物铸造为 NFT 并永久保存。
+                    </p>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-700">
+                        <li>
+                            作为团队<strong>技术负责人</strong>，设计并实现了 PWA 离线缓存策略与简易的钱包密钥管理方案。
+                        </li>
+                        <li>
+                            3 天内极限开发，贡献了 85% 以上的核心代码，主导实现了从养成、<strong>铸造 (Mint) 为 NFT</strong> 到链上数据查询的全流程。
+                        </li>
+                        <li>
+                            技术栈：React, PWA, Ethers.js, Node.js (后端 API)。
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- === 教育背景 (补充英语) === -->
+            <section class="mt-8">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">教育背景</h2>
+                <div class="border-l-4 border-gray-400 pl-4">
+                    <h3 class="text-xl font-semibold text-gray-900">南京信息工程大学 (NUIST)</h3>
+                    <p class="text-gray-700 font-medium">数据科学与大数据技术 (本科)</p>
+                    <p class="text-sm text-gray-500">2022.09 - 2026.06 (预计) | 中国, 南京</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                        <li><strong>专业排名: 4 / 103</strong></li>
+                        <li>主修课程: 数据结构, 计算机网络, 操作系统, 数据库原理, 软件工程。</li>
+                        <li>奖项: 美国大学生数学建模竞赛 (MCM/ICM) S 奖。</li>
+                        <li><strong>英语能力: </strong> 口语流利，可流畅阅读英文技术文档。</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
